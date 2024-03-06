@@ -129,8 +129,30 @@ header {
 .something {
     display: flex;
 }
+.small > img {
+    display: block;
+    float: left;
+    padding-right: 5px;
+}
+.small > span {
+    display: block;
+    float: left;
+    padding-top: 5px;
+    padding-right: 5px;
+}
 .something2 {
     display: flex;
+}
+.something2 > img {
+    display: block;
+    float: left;
+    padding-right: 5px;
+}
+.something2 > span {
+    display: block;
+    float: left;
+    padding-top: 5px;
+    padding-right: 5px;
 }
 .dates-picture {
     width: 320px;
@@ -213,6 +235,13 @@ header {
     font-weight: 700;
     line-height: 90px;
     letter-spacing: 0em;
-    text-align: center;
-     
+    text-align: center; 
+}
+.news-and-reviews {
+    display: flex;
+}
+.news-zagolovok h2{
+    font-family: 'EB Garamond';
+    font-size: 48px;
+    font-weight: 700;
 }
