@@ -429,14 +429,49 @@ header {
     letter-spacing: 0em;
     text-align: left;
     text-decoration: none;
+    color: #191919;
 
 }
-.sinatra span:first-child {
-    display: block;
+.sinatra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+.sinatra-square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #05B093;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 16px 20px;
+    margin-right: 20px;
+    
+}
+.sinatra-square span {
+    color: white;
+    width: 45px;
+    
+    font-family: 'EB Garamond';
+    font-size: 18px;
+    font-weight: 700;
+    
+    letter-spacing: 0em;
+    text-align: left;
+}
+.sinatra-square span:first-child {
+    width: 15px;
+    line-height: 30px;
+    font-family: 'EB Garamond';
+    font-size: 32px;
+    font-weight: 700;
+    
+    letter-spacing: 0em;
+    text-align: left;
+
+
 }
 footer {
     width: 100%;
@@ -451,9 +486,10 @@ footer {
     height: 180px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     color: white;
+    padding-top: 50px;
 }
 .end img {
     width: 330px;
@@ -464,6 +500,7 @@ footer {
 .contacts {
     display: flex;
     flex-direction: column;
+    gap: 12px;
 
 } 
 .navigation2 {
