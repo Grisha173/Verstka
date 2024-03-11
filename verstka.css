@@ -370,7 +370,8 @@ header {
     height: 200px;
     padding-top: 33px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .buttons button {
@@ -390,3 +391,115 @@ header {
     background: rgba(25, 25, 25, 0.3);
     color: white;
 }
+.announce-calendar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.announce-calendar h2 {
+    font-family: Garamond;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.calendar {
+    display: flex;
+    align-items: end;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.sessions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sinatra span {
+    font-family: Fira Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+
+}
+.sinatra span:first-child {
+    display: block;
+    background: #05B093;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px 20px;
+}
+footer {
+    width: 100%;
+    height: 204px;
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.end {
+    width: 1024px;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.end img {
+    width: 330px;
+    height: 40px;
+    padding: 14px, 3px, 14px, 2px;
+
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+
+} 
+.navigation2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+}
+.navigation2 a {
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    
+}
+.navigation2 a:hover {
+    text-decoration: underline;
+}
+.merop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
+}
+.merop span {
+    margin-bottom: 30px;
+    font-family: 'EB Garamond';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+    
