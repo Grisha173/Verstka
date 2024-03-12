@@ -476,9 +476,9 @@ footer {
     background: #191919;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 150px;
     flex-direction: column;
-    padding-left: 150px;
 }
 .end {
     width: 1024px;
