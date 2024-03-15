@@ -7,7 +7,6 @@ header {
     position: absolute;
 }
 .container {
-    background: black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -16,15 +15,16 @@ header {
 }
 .container img {
     width: 258px;
-    height: 53px;
+    height: 28px;
     top: 60px;
     left: 162px;
 }
 .navigation {
-    width: 220px;
+    width: 260px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 450px;
 }
 .navigation__item {
     display: block;
@@ -42,13 +42,123 @@ header {
 }
 .navigation__item--stripes {
     background: url("Group\ 12.png") no-repeat center center;
-    padding-left: 40px;
+    padding-left: 80px;
 }
 .content {
     background: #272727;
     float: right;
     width: 562px;
     height: 1024px;
-    
-
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.content__words {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    margin-left: 50px;
+}
+.content__words--first {
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: #FFFFFF;
+}
+.content__words--second {
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #C2C2C2;
+}
+.content__words--third {
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #EFC58B;
+}
+.ring {
+    position: absolute;
+    margin-top: 427px;
+    margin-left: 858px;
+}
+.zag {
+    position: absolute;
+    width: 493px;
+    height: 71px;
+    margin-top: 439px;
+    margin-left: 157px;
+    font-family: Forum;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 71px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #272727;
+}
+.podzag {
+    position: absolute;
+    width: 178px;
+    height: 24px;
+    margin-top: 560px;
+    margin-left: 459px;
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #272727;
+    text-decoration: none;
+}
+.podzag_ {
+    position: absolute;
+    width: 130px;
+    margin-top: 576px;
+    margin-left: 291px;
+    border: 1px solid #272727;
+    text-decoration: none;
+}
+.RU {
+    position: absolute;
+    width: 20px;
+    height: 21px;
+    margin-top: 943px;
+    margin-left: 162px;
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #272727;
+}
+.EN {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    margin-top: 943px;
+    margin-left: 192px;
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #272727;
+    opacity: 50%;
 }
