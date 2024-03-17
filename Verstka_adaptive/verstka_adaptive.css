@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 header {
     width: 100%;
     height: 110px;
@@ -5,19 +8,16 @@ header {
     flex-direction: row;
     padding-top: 60px;
     position: absolute;
-}
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    z-index: 10;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
-.container img {
+header img {
     width: 258px;
     height: 28px;
     top: 60px;
     left: 162px;
+    margin-left: 162px;
 }
 .navigation {
     width: 260px;
@@ -25,6 +25,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin-left: 450px;
+    margin-right: 162px;
 }
 .navigation__item {
     display: block;
@@ -45,23 +46,85 @@ header {
     padding-left: 80px;
 }
 .content {
-    background: #272727;
-    float: right;
-    width: 562px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%);
+    width: 100%;
     height: 1024px;
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    position: relative;
+}
+.content__title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    margin-top: 427px;
+}
+.content__zag {
+    width: calc(60% - 162px);
+    height: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 162px;
+}
+.content__zag span {
+    width: 433px;
+    height: 71px;
+    font-family: Forum;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 71px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #272727;
+}
+.content__zag__podzag {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+.content__picture {
+    flex: 1;
+    text-align: center;
+}
+@media screen and (min-width: 1400px) {
+    .content__picture {
+        text-align: left;
+    }
+    .ring {
+        margin-left: -160px;
+    }
 }
 .content__words {
-    height: 90px;
+    width: 200px;
+    height: 85px;
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: space-between;
-    padding-bottom: 60px;
-    margin-left: 50px;
+    white-space: nowrap;
+    margin-right: 162px;
+}
+.content__footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 281px;
+}
+.content__language {
+    width: 51px;
+    margin-left: 162px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .content__words--first {
     font-family: Futura PT;
@@ -92,15 +155,11 @@ header {
     color: #EFC58B;
 }
 .ring {
-    position: absolute;
-    
+   
 }
 .zag {
-    position: absolute;
-    width: 493px;
+    width: 433px;
     height: 71px;
-    margin-top: 439px;
-    margin-left: 157px;
     font-family: Forum;
     font-size: 64px;
     font-weight: 400;
@@ -110,11 +169,8 @@ header {
     color: #272727;
 }
 .podzag {
-    position: absolute;
     width: 178px;
     height: 24px;
-    margin-top: 560px;
-    margin-left: 459px;
     font-family: Segoe UI;
     font-size: 18px;
     font-style: italic;
@@ -124,21 +180,16 @@ header {
     text-align: left;
     color: #272727;
     text-decoration: none;
+    padding-left: 38px
 }
 .podzag_ {
-    position: absolute;
     width: 130px;
-    margin-top: 576px;
-    margin-left: 291px;
     border: 1px solid #272727;
     text-decoration: none;
 }
 .RU {
-    position: absolute;
     width: 20px;
     height: 21px;
-    margin-top: 943px;
-    margin-left: 162px;
     font-family: Futura PT;
     font-size: 16px;
     font-weight: 400;
@@ -148,11 +199,8 @@ header {
     color: #272727;
 }
 .EN {
-    position: absolute;
     width: 21px;
     height: 21px;
-    margin-top: 943px;
-    margin-left: 192px;
     font-family: Futura PT;
     font-size: 16px;
     font-weight: 400;
