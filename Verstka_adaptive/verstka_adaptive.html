@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
-    <link href = "fonts/roboto/stylesheet.css" rel = "stylesheet" type = "text/css" />
+    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <header>     
@@ -45,15 +45,28 @@
             </div>
     </div>
     <div class="pictures">
-        <div class="pictures__left">
-                <a href="#">Перейти в раздел</a>
-                <a href="#">Для мужчин</a>
-                <a href="#"></a>
+        <a class="pictures__item pictures__item--left">
+            <span>Перейти в раздел</span>
+            <span>Для мужчин</span>
+            <hr />
+        </a>
+        <a class="pictures__item pictures__item--right">       
+            <span>Перейти в раздел</span>
+            <span>Для женщин</span>
+            <hr />
+        </a>
+    </div>
+    <div class="maps">
+        <div class="maps__zag">
+            <span>Найди </br> бутик около себя</span>
+            <span>Введите свой адрес и узнайте о самых ближайших бутиках к вам</span>
+            <div class="maps__input">
+                <input type="text" placeholder="Введите текст" class="maps__input__add" />
+                <button></button>
+            </div>
         </div>
-        <div class="pictures__right">
-                <a href="#">Перейти в раздел</a>
-                <a href="#">Для женщин</a>
-                <a href="#"></a>
+        <div class="maps__map">
+
         </div>
     </div>
 </body>

@@ -213,10 +213,112 @@ header img {
     justify-content: start;
     gap: 21px;
 }
-.pictures__left {
+.pictures__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 587px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+}
+.pictures__item--left {
     background-image: url(for@1.jpg);
 }
-.pictures__right {
+.pictures__item--right {
     background-image: url(for@2.jpg);
 }
+.pictures__item span:first-child {
+    font-family: Futura PT;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FFFFFF;
+}
+.pictures__item span {
+    font-family: Forum;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 71px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #FFFFFF;
+}
+.pictures__item hr {
+    border: 1px solid #FFFFFF;
+    width: 130px;
+}
+.maps {
+    display: flex;
+    margin-top: 20px;
+    height: 604px;
+    background: #272727;
+}
+.maps__zag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 620.5px;
+}
+.maps__zag span:first-child {
+    font-family: Forum;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.maps__zag span {
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    width: 400px;
+}
+.maps__input {
+    margin-top: 60px;
+    border-bottom: 1.8px solid #FFFFFF;
+}
+.maps__input__add {
+    background: #272727;
+    width: 386px;
+    top: 2083px;
+    left: 162px;
+    border: 0; 
+    line-height: 43px;
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.maps__input__add:focus{
+    outline: none;
+}
+
+.maps__input__add::placeholder{
+    color: #FFFFFF66;
+}
+.maps__input__add:focus::placeholder{
+    color: transparent;
+}
+.maps__input button {
+    background-color: transparent;
+    background-image: url(Line.png);
+    width: 30px;
+    height: 17px;
+    color: #272727;
+    border: 0;
+}
+
 
