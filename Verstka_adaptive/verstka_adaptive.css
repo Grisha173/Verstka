@@ -53,7 +53,6 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 .content__title {
     width: 100%;
@@ -154,9 +153,6 @@ header img {
     text-align: left;
     color: #EFC58B;
 }
-.ring {
-   
-}
 .zag {
     width: 433px;
     height: 71px;
@@ -210,3 +206,17 @@ header img {
     color: #272727;
     opacity: 50%;
 }
+.pictures {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 21px;
+}
+.pictures__left {
+    background-image: url(for@1.jpg);
+}
+.pictures__right {
+    background-image: url(for@2.jpg);
+}
+
