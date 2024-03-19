@@ -320,5 +320,61 @@ header img {
     color: #272727;
     border: 0;
 }
-
-
+.rings {
+    margin-top: 20px;
+    display:flex
+}
+.rings__rings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.rings__item1,.rings__item2, .rings__item3, .rings__item4 {
+    width: 400px;
+    height: 400px;
+}
+.rings__item1 img {
+    margin-left: 70px;
+    margin-top: 47px;
+    margin-bottom: 67px;
+}
+.rings__item1 div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    height: 86px;
+    justify-content: space-between;
+}
+.rings__item2 img {
+    margin-left: 70px;
+    margin-top: 47px;
+    margin-bottom: 67px;
+}
+.rings__item2 div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    height: 86px;
+    justify-content: space-between;
+}
+.rings__item3 img {
+    margin-right: 40px;
+}
+.rings__item3 div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    height: 86px;
+    justify-content: space-between;
+}
+.rings__item4 img {
+    margin-right: 43px;
+}
+.rings__item4 div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    height: 86px;
+    justify-content: space-between;
+}
