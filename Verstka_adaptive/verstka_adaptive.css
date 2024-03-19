@@ -322,7 +322,9 @@ header img {
 }
 .rings {
     margin-top: 20px;
-    display:flex
+    display:flex;
+    width: 100%;
+    justify-content: center;
 }
 .rings__rings {
     display: flex;
@@ -333,6 +335,8 @@ header img {
 .rings__item1,.rings__item2, .rings__item3, .rings__item4 {
     width: 400px;
     height: 400px;
+    background: #EDEDED;
+
 }
 .rings__item1 img {
     margin-left: 70px;
@@ -348,7 +352,7 @@ header img {
 }
 .rings__item2 img {
     margin-left: 70px;
-    margin-top: 47px;
+    margin-top: 60px;
     margin-bottom: 67px;
 }
 .rings__item2 div {
@@ -360,6 +364,7 @@ header img {
 }
 .rings__item3 img {
     margin-right: 40px;
+    margin-top: -20px;
 }
 .rings__item3 div {
     display: flex;
@@ -367,9 +372,11 @@ header img {
     margin-left: 30px;
     height: 86px;
     justify-content: space-between;
+    margin-top: -6px;
 }
 .rings__item4 img {
     margin-right: 43px;
+    margin-top: -9px; 
 }
 .rings__item4 div {
     display: flex;
@@ -377,4 +384,269 @@ header img {
     margin-left: 30px;
     height: 86px;
     justify-content: space-between;
+    margin-top: -11px;
+}
+.rings__zag {
+    font-family: Futura PT;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.51px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #272727;
+}
+.rings__podzag {
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23.08px;
+    text-align: left;
+    color: #757575;
+}
+.rings__price {
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 23.94px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #e2b67a;
+}
+.rings__picture {
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+.rings__picture div {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.social {
+    margin-top: 20px;
+    background: #272727;
+    width: 100%;
+    height: 886px;
+}
+.social span{
+    position: relative;
+    top: 100px;
+    left: 162px;
+    font-family: Forum;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.99px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.something {
+    width: 100%;
+    height: 640px;
+    display: flex;
+
+}
+.something__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 110px;
+    padding-top: 180px;
+}
+.something__number {
+    width: 345px;
+    height: 81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.something__number span:first-child{
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.08px;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: #272727;
+}
+.something__number span {
+    font-family: Futura PT;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28.2px;
+    text-align: left;
+    color: #959595;
+}
+.something__news {
+    height: 89px;
+    width: 345px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    border-bottom: 1.8px solid #272727;
+}
+.something__news span {
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.08px;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: #272727;
+}
+.something__input__add {
+    
+    width: 307px;
+    top: 2083px;
+    left: 162px;
+    border: 0; 
+    line-height: 43px;
+    font-family: Futura PT;
+    font-size: 22px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.something__input__add:focus{
+    outline: none;
+}
+
+.something__input__add::placeholder{
+    color: #959595;
+}
+.something__input__add:focus::placeholder{
+    color: transparent;
+}
+.something__input button {
+    background-color: transparent;
+    background-image: url(Line1.png);
+    width: 30px;
+    height: 17px;
+    color: #272727;
+    border: 0;
+}
+footer {
+    background: #272727;
+    width: 100%;
+    height: 220px;
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+.end {
+    width: 1150px;
+    height: 220px;
+    margin-left: 162px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.end__navigation {
+    display: flex;
+    flex-direction: row;
+    width: 1150px;
+    height: 18px;
+    gap: 72px;
+}
+.end__navigation a {
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 17.95px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.end__all {
+    height: 112px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.end__number {
+    width: 184px;
+    height: 112px;
+    margin-right: -182px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.end__number span:first-child {
+    font-family: Futura PT;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.95px;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+.end__number span {
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23.08px;
+    text-align: left;
+    color: #C2C2C2;
+}
+.end__fac-inst {
+    height: 35px;
+}
+.end__news {
+    width: 184px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.end__news span {
+    font-family: Futura PT;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.95px;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+.end__app-google {
+    height: 30px;
+}
+.end__input__add {
+    background: #272727;
+    width: 146px;
+    top: 2083px;
+    left: 162px;
+    border: 0; 
+    line-height: 43px;
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.end__input__add:focus{
+    outline: none;
+}
+
+.end__input__add::placeholder{
+    color: #959595;
+}
+.end__input__add:focus::placeholder{
+    color: transparent;
+}
+.end__input button {
+    background-color: transparent;
+    background-image: url(Line.png);
+    width: 30px;
+    height: 17px;
+    color: #272727;
+    border: 0;
+}
+.end__input {
+    border-bottom: 1px solid #FFFFFF;
 }
