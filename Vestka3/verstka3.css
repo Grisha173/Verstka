@@ -1,10 +1,72 @@
 header {
     width: 100%;
     height: 90px;
+    background: white;
 }
 .container {
     margin-left: 60px;
     margin-right: 60px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.container__menu {
+    width: 230px;
+    height: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.container__menu span {
+    font-family: Formular;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 28px;
+    text-align: left;
+    color: #111827;
+}
+.container__menu button {
+    background: url(Burger.png) no-repeat center center;
+    width: 24px;
+    height: 16px;
+    border: 0;
+}
+.wrapper {
+    background: #E5E7EB;
+}
+.content {
+    margin-left: 59px;
+    margin-right: 59px;
+    background-color: var(--gray-color);
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.content__zag {
+    height: 204px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.content__zag span:first-child {
+    height: 108px;
+    font-family: Formular;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 36px;
+    text-align: left;
+    color: #111827;
+
+}
+.content__zag span {
+    height: 84px;
+    font-family: Formular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #111827;
 }
