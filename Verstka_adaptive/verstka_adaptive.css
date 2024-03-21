@@ -222,7 +222,7 @@ header img {
     height: 587px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: auto;
+    background-size: cover;
 }
 .pictures__item--left {
     background-image: url(for@1.jpg);
@@ -540,6 +540,7 @@ footer {
     width: 1150px;
     height: 220px;
     margin-left: 162px;
+    margin-right: 162px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -547,6 +548,7 @@ footer {
 .end__navigation {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 1150px;
     height: 18px;
     gap: 72px;
@@ -598,7 +600,6 @@ footer {
     height: 35px;
 }
 .end__news {
-    width: 184px;
     height: 112px;
     display: flex;
     flex-direction: column;
