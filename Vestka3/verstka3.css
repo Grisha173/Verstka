@@ -11,14 +11,15 @@ header {
     align-items: center;
 }
 .container__menu {
-    width: 230px;
     height: 16px;
     display: flex;
+    gap: 16px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-.container__menu span {
+
+.contacts__phone {
     font-family: Formular;
     font-size: 20px;
     font-weight: 900;
@@ -26,18 +27,36 @@ header {
     text-align: left;
     color: #111827;
 }
+.contacts__title {
+    display: none;
+    font-family: Formular;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+
+}
+
 .container__menu button {
     background: url(Burger.png) no-repeat center center;
     width: 24px;
     height: 16px;
     border: 0;
 }
+@media screen and (min-width: 759px) {
+    .container__menu button {
+        display: none;
+    }
+    .contacts__title {
+        display: block;
+    }
+}
+
 .wrapper {
     background: #E5E7EB;
-    padding: 0 59px;
+    padding: 0 59px 48px;
 }
 .content {
-    background-color: var(--gray-color);
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -285,5 +304,130 @@ header {
     line-height: 24px;
     text-align: left;
     color: #6B7280;
-
+}
+.questions {
+    margin-top: 48px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: #F9FAFB;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.questions span {
+    font-family: Formular;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 36px;
+    text-align: left;
+}
+.questions__search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+.questions_search-input {
+    width: 213px;
+    height: 24px;
+    padding: 12px;
+    gap: 4px;
+    border-radius: 4px;
+    border: 2px solid #111827;
+}
+.questions_search-textarea {
+    border-radius: 4px;
+    border: 2px solid #111827;
+    width: 473px;
+    height: 126px;
+    padding: 12px;
+    gap: 4px;
+}
+.questions button {
+    width: 497px;
+    height: 44px;
+    padding: 10px 28px 10px 28px;
+    gap: 4px;
+    border-radius: 4px;
+    opacity: 0px;
+    background: #8B5CF6;
+    color: white;
+    font-family: Formular;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+}
+footer {
+    background: #111827;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding-top: 40px;
+    padding-bottom: 44px;
+}
+.footer__navigation {
+    display: flex;
+    gap: 24px;
+}
+.footer__navigation a {
+    color: white;
+    text-decoration: none;
+}
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.footer__info span:first-child {
+    font-family: Formular;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 36px;
+    text-align: left;
+    color: #F9FAFB;
+}
+.footer__info span {
+    font-family: Formular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #F9FAFB;
+}
+.footer__info-span {
+    font-family: Formular;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #F9FAFB;
+}
+.footer__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.footer__text span:first-child {
+    font-family: Formular;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+    color: #4B5563;
+}
+.footer__text span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    color: #6B7280;
 }
