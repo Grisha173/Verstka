@@ -13,6 +13,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.container__three {
+    display: none;
+}
 .container__menu {
     height: 16px;
     display: flex;
@@ -115,15 +118,14 @@ header {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    align-items: start;
 }
 .content__zag {
-    height: 204px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 .content__zag span:first-child {
-    height: 108px;
     font-family: Formular;
     font-size: 30px;
     font-weight: 900;
@@ -133,7 +135,6 @@ header {
 
 }
 .content__zag span {
-    height: 84px;
     font-family: Formular;
     font-size: 20px;
     font-weight: 400;
@@ -146,7 +147,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 584px;
     background: white;
     border-radius: 16px;
     gap: 28px;
@@ -335,7 +335,17 @@ header {
     line-height: 36px;
     text-align: left;
 }
-.reviews__text {
+.reviews__info {
+    display: flex;
+    gap: 24px;
+}
+.reviews__text-one {
+    background: white;
+    border-radius: 16px;
+    padding: 32px 16px;
+}
+.reviews__text-two {
+    display: none;
     background: white;
     border-radius: 16px;
     padding: 32px 16px;
@@ -362,8 +372,7 @@ header {
 }
 .questions {
     margin-top: 48px;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding: 64px 135.5px;
     background: #F9FAFB;
     border-radius: 16px;
     display: flex;
@@ -388,23 +397,23 @@ header {
     margin-bottom: 20px;
 }
 .questions_search-input {
-    width: 213px;
-    height: 24px;
+    width: calc(50% - 12px);
     padding: 12px;
     gap: 4px;
     border-radius: 4px;
     border: 2px solid #111827;
+    box-sizing: border-box;
 }
 .questions_search-textarea {
     border-radius: 4px;
     border: 2px solid #111827;
-    width: 473px;
+    width: 100%;
     height: 126px;
     padding: 12px;
     gap: 4px;
 }
 .questions button {
-    width: 497px;
+    width: 100%;
     height: 44px;
     padding: 10px 28px 10px 28px;
     gap: 4px;
@@ -434,6 +443,9 @@ footer {
 .footer__navigation a {
     color: white;
     text-decoration: none;
+}
+.footer__navigation-two {
+    display: none;
 }
 .footer__info {
     display: flex;
@@ -470,6 +482,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    padding: 0 128px;
 }
 .footer__text span:first-child {
     font-family: Formular;
@@ -485,6 +498,10 @@ footer {
     line-height: 16px;
     text-align: center;
     color: #6B7280;
+}
+.footer__number {
+    display: flex;
+    flex-direction: column;
 }
 @media screen and (min-width: 759px) {
     .container__menu button {
@@ -504,6 +521,91 @@ footer {
         flex-direction: row;
     }
     .advantages__item {
-        width: calc(50%-12px);
+        width: calc(50% - 12px);
+    }
+    .guarantees__podzag {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .guarantees__certificate {
+        width: calc(50% - 12px);
+    }
+    .footer__info {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: calc(100% - 256px);
+    }
+    .content img {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container__one {
+        border: 0;
+    }
+    .content {
+        flex-direction: row;
+    }
+    .reviews__text-two {
+        display: block;
+    }
+    .footer__text {
+        flex-direction: row;
+    }
+    .content img {
+        width: 50%;
+    }
+    .container__three {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 12px;
+        border-right: 1px solid #A78BFA
+    }
+    .container__two {
+        display: none;
+    }
+    .footer__navigation-two a {
+        color: white;
+        text-decoration: none;
+    }
+    .footer__navigation-two {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__navigation {
+        display: none;
+    }
+    .footer__info {
+        width: calc(100% - 30px);
+    }
+}
+@media screen and (min-width: 1536px) {
+    .content__calculator {
+        display: flex;
+        gap: 24px;
+    }
+    .content {
+        flex-direction: column;
+        width: 50%;
+    }
+    .content img {
+        width: calc(100% - 12px);
+    }
+    .calculator {
+        width: 50%;
+        margin-top: 0;
+    }
+    .advantages__item {
+        width: 33.3%;
+        min-width: 30%;
+        flex: 1;
+    }
+    .guarantees__certificate {
+        width: 25%;
+        flex: 1;
+        min-width: 20%;
     }
 }
