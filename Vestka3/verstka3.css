@@ -1,9 +1,7 @@
 header {
     width: 100%;
     background: white;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    display: block;
     padding: 24px 0 24px;
 }
 .container {
@@ -49,6 +47,27 @@ header {
     height: 16px;
     border: 0;
 }
+.menu {
+    width: 100%;
+    display: none;
+    padding-top: 12px;
+    background-color: white;
+    padding-bottom: 24px;
+}
+.menu--visible {
+    display: block;
+    position: fixed;
+    top: 0;
+}
+@media screen and (min-width:759px) {
+    .menu--visible {
+        position: relative;
+    }
+    .container--menu {
+        display: none;
+    }
+}
+
 .container__one {
     margin-left: 60px;
     margin-right: 60px;
@@ -59,7 +78,6 @@ header {
     border-top: 2px solid #A78BFA;
     border-bottom: 2px solid #A78BFA;
     padding: 12px 0 12px;
-    display: none;
 }
 .container_nav {
     display: flex;
@@ -97,7 +115,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    display: none;
+    padding-top: 12px;
 }
 .container__two span {
     font-family: Formular;
@@ -119,6 +137,9 @@ header {
     flex-direction: column;
     gap: 16px;
     align-items: start;
+}
+.content img {
+    width: 100%;
 }
 .content__zag {
     display: flex;
@@ -328,6 +349,31 @@ header {
     align-items: center;
     gap: 32px 
 }
+.slider {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.button--prev {
+    background-image: url(Vector\ \(5\).png);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    flex: none;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+.button--next {
+    background-image: url(Vector\ \(6\).png);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    flex: none;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
 .reviews span {
     font-family: Formular;
     font-size: 30px;
@@ -335,21 +381,16 @@ header {
     line-height: 36px;
     text-align: left;
 }
-.reviews__info {
+.slider__container {
     display: flex;
     gap: 24px;
 }
-.reviews__text-one {
+.slider__slide {
     background: white;
     border-radius: 16px;
     padding: 32px 16px;
 }
-.reviews__text-two {
-    display: none;
-    background: white;
-    border-radius: 16px;
-    padding: 32px 16px;
-}
+
 .reviews__text span {
     font-family: Formular;
     font-size: 18px;
@@ -510,11 +551,8 @@ footer {
     .contacts__title {
         display: block;
     }
-    .container__one {
-        display: flex;
-    }
-    .container__two {
-        display: flex;
+    .menu {
+        display: block;
     }
     .advantages__list {
         flex-wrap: wrap;
@@ -545,9 +583,6 @@ footer {
     }
     .content {
         flex-direction: row;
-    }
-    .reviews__text-two {
-        display: block;
     }
     .footer__text {
         flex-direction: row;

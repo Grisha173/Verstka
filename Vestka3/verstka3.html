@@ -5,6 +5,7 @@
     <title>Гриша Бог</title>
     <link rel="stylesheet" type="text/css" href="verstka3.css" />
     <link href="Fonts/stylesheet.css" rel="stylesheet">
+    <script src="slider.js"></script>
 </head>
 <body>
     <header>
@@ -20,22 +21,39 @@
                     <span class="contacts__phone">+7 (800) 123 45-67</span>
                     <span class="contacts__title">Звонки по России бесплатны</span>
                 </div>
-                <button></button>
+                <button onClick="toggleMenu()"></button>
             </div>
         </div>
-        <div class="container__one">
-            <nav class="container_nav">
-                <a href="#">Калькулятор</a>
-                <a href="#">О нас</a>
-                <a href="#">Гарантии</a>
-                <a href="#">Отзывы</a>
-            </nav>
-            <button>Оставить заявку</button>
-        </div>
-        <div class="container__two">
-            <span>Доставляем товары из заграницы в Россию</span>
-            <span>Стоимость от 550 рублей за заказ</span>
-            <span>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</span>
+        <div class="menu">
+            <div class="container container--menu">
+                <img src="Frame 2.png" />
+                <div class="container__menu">
+                    <div class="container__three">
+                        <span>Доставляем товары из заграницы в Россию</span>
+                        <span>Стоимость от 550 рублей за заказ</span>
+                        <span>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</span>
+                    </div>
+                    <div class="contacts">
+                        <span class="contacts__phone">+7 (800) 123 45-67</span>
+                        <span class="contacts__title">Звонки по России бесплатны</span>
+                    </div>
+                    <button onClick="toggleMenu()"></button>
+                </div>
+            </div>
+            <div class="container__one">
+                <nav class="container_nav">
+                    <a href="#">Калькулятор</a>
+                    <a href="#">О нас</a>
+                    <a href="#">Гарантии</a>
+                    <a href="#">Отзывы</a>
+                </nav>
+                <button>Оставить заявку</button>
+            </div>
+            <div class="container__two">
+                <span>Доставляем товары из заграницы в Россию</span>
+                <span>Стоимость от 550 рублей за заказ</span>
+                <span>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</span>
+            </div>
         </div>
     </header>
     <div class="wrapper">
@@ -142,21 +160,39 @@
         </div>
         <div class="reviews">
             <span>Отзывы</span>
-            <div class="reviews__info">
-                <div class="reviews__text-one">
-                    <span>Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки невероятно позитивным</span>
-                    <div class="reviews__picture">
-                        <span>Анна</span>
-                        <img src="asr.png" />
+            <div class="slider">
+                <button class="button button--prev"></button>
+                <div class="slider__container">
+                    <div class="slider__slide">
+                        <span>Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки невероятно позитивным</span>
+                        <div class="reviews__picture">
+                            <span>Анна</span>
+                            <img src="asr.png" />
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <span>Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки невероятно позитивным</span>
+                        <div class="reviews__picture">
+                            <span>Алексей</span>
+                            <img src="asr.png" />
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <span>Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки невероятно позитивным</span>
+                        <div class="reviews__picture">
+                            <span>Алексей</span>
+                            <img src="asr.png" />
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <span>Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки невероятно позитивным</span>
+                        <div class="reviews__picture">
+                            <span>Алексей</span>
+                            <img src="asr.png" />
+                        </div>
                     </div>
                 </div>
-                <div class="reviews__text-two">
-                    <span>Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки невероятно позитивным</span>
-                    <div class="reviews__picture">
-                        <span>Алексей</span>
-                        <img src="asr.png" />
-                    </div>
-                </div>
+                <button class="button button--next"></button>
             </div>
         </div>
         <div class="questions">
@@ -196,5 +232,13 @@
             <span>Разработкой макета занимался Васильев Александр | Что-то на IT’шном</span>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            const classVisible = 'menu--visible';
+            const menu = document.getElementsByClassName('menu');
+            if (menu[0]) menu[0].classList.toggle(classVisible);
+        }
+
+    </script>
 </body>
 </html>
