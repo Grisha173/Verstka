@@ -1,20 +1,13 @@
-const slideSelector = '.slider__slide';
 const buttonsSelector = {
     prev: '.button--prev',
     next: '.button--next',
 };
+const sliderSelector = '.slider-container';
+const slideSelector = '.slider-slide img';
+const trackSelector = '.slider-slide';
+
 let activeSlide = 0;
-let slides, buttons; 
-
-const hideSlides = () => {
-    slides.forEach(element => {
-        element.style.display = 'none';
-    });
-};
-
-const showSlide = () => {
-    slides[activeSlide].style.display = 'block';
-}
+let slider, slides, track, buttons;
 
 const slidePrev = () => {
     if (activeSlide === 0){
@@ -22,8 +15,7 @@ const slidePrev = () => {
     } else {
         activeSlide = activeSlide - 1;
     }
-    hideSlides();
-    showSlide();
+    refresh();
 };
 
 const slideNext = () => {
@@ -32,8 +24,14 @@ const slideNext = () => {
     } else {
         activeSlide = activeSlide + 1;
     }
-    hideSlides();
-    showSlide();
+    refresh();
+};
+
+const refresh = () => {
+    const width = slider.offsetWidth;
+    const move = activeSlide * width;
+    track.style.transform = `translate(-${move}px, 0)`;
+    
 };
 
 const sliderInit = () => {
@@ -44,10 +42,9 @@ const sliderInit = () => {
     }
     buttons.prev.addEventListener('click', slidePrev);
     buttons.next.addEventListener('click', slideNext);
-
-    hideSlides();
-    showSlide();
-    console.log('SLIDES:', slides, 'BUTTONS:', buttons);
+    slider = document.querySelector(sliderSelector);
+    track = document.querySelector(trackSelector);
+    refresh();
 }
 
 window.onload = () => {
