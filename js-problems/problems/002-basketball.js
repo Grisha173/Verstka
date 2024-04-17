@@ -16,6 +16,19 @@
  * @returns {(number|undefined)}
  */
 function getWinner(points) {
+    let X = points
+    .map((element) => element
+        .split('-')
+        .map((element) => Number(element))
+    );
+    let sumMassive2 = 0;
+    let sumMassive22 = 0;
+    for (let i = 0; i < 4; i += 1) {
+       sumMassive2 += X[i][0];
+       sumMassive22 += X[i][1];
+    }
+    if ( sumMassive2 > sumMassive22) return 1;
+    if ( sumMassive2 < sumMassive22) return 2;
     return undefined;
 }
 

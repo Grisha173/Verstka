@@ -18,7 +18,16 @@
  * @returns {number}
  */
 function getSpringMeltStreak(temperature) {
-    return undefined;
+    const massive6 = [[]];
+    for (let i = 0; i < temperature.length; i += 1) {
+        if (temperature[i] <= 0) {
+            massive6.push([]);
+        } else if (temperature[i] > 0) {
+            massive6[massive6.length - 1].push(temperature[i]);
+        }
+    }
+    massive6.sort((a, b) => a.length < b.length ? 1 : -1);
+    return massive6[0].length;
 }
 
 module.exports = getSpringMeltStreak;
