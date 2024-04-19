@@ -19,7 +19,16 @@
  * @returns {boolean}
  */
 function isIpValid(address) {
-    return undefined;
+    let array = address.split('.').map(item => Number(item));
+    if (array.length !== 4) {
+        return false;
+    }
+    for (let i = 0; i < array.length; i += 1) {
+        if (array[i] > 255 || array[i] < 0) {
+            return false;
+        }
+    }
+    return true;
 }
 
 module.exports = isIpValid;
