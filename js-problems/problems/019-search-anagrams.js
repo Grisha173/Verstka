@@ -12,7 +12,10 @@
  * @returns {string}
  */
 function searchAnagrams(value) {
-    return undefined;
+    let valueRegex = (value.match(/[a-zA-Zа-яА-Я]{1,}/g) || []).map(item => ({word: item, letters: item.toLocaleLowerCase().split('').sort().join('')}));
+    valueRegex = valueRegex.filter(({word, letters}) => valueRegex.some(item => item.word.toLowerCase() !== word.toLowerCase() && item.letters === letters));
+    return valueRegex.map(item => item.word).join(' ');
+
 }
 
 module.exports = searchAnagrams;

@@ -10,7 +10,17 @@
  * @returns {string}
  */
 function rle(value) {
-    return undefined;
+    const array = value.split('').reduce((akum, item) => {
+        if (!akum.length) return [{letter: item, count: 1}];
+        if (akum[akum.length - 1].letter === item) {
+            akum[akum.length - 1].count += 1;
+            return akum;
+        } else {
+            akum.push({letter: item, count: 1});
+            return akum;
+        }
+    }, []);
+    return array.map(item => item.count > 1 ? `${item.count}${item.letter}` : item.letter).join('');
 }
 
 module.exports = rle;
