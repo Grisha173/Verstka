@@ -15,7 +15,8 @@
  * @returns {string}
  */
 function timeago(seconds) {
-    return undefined;
+    if (seconds >= 0 && seconds < 10) return console.log('just now');
+
 }
 
 module.exports = timeago;

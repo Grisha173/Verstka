@@ -16,7 +16,18 @@
  * @returns {boolean}
  */
 function parentheses(value) {
-    return undefined;
+    if (!value) return false;
+    const array = value.split('');
+    let count = 0;
+    let error = false;
+    array.forEach(element => {
+        if (element === ')') count -= 1;
+        if (element === '(') count += 1;
+        if (count < 0) error = true;
+    });
+    if (error) return false;
+    if (count === 0) return true;
+    return false;
 }
-
+        
 module.exports = parentheses;

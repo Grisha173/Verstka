@@ -14,7 +14,12 @@
  * @returns {string}
  */
 function hexToRgb(color) {
-    return undefined;
+    let strSlice = color.slice(1);
+    strSlice = strSlice.split('');
+    if (strSlice.length === 3) strSlice = [strSlice[0] + strSlice[0], strSlice[1] + strSlice[1], strSlice[2] + strSlice[2]];
+    if (strSlice.length === 6) strSlice = [strSlice[0] + strSlice[1], strSlice[2] + strSlice[3], strSlice[4] + strSlice[5]];
+    strSlice = strSlice.map(element => parseInt(element, 16));
+    return `rgb(${strSlice[0]}, ${strSlice[1]}, ${strSlice[2]})`;
 }
 
 module.exports = hexToRgb;

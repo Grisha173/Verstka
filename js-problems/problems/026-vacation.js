@@ -14,7 +14,10 @@
  * @returns {string}
  */
 function vacation(date) {
-    return undefined;
+    const array = date.split('.');
+    const fisrtDate = new Date(array[2], array[1] - 1, array[0]);
+    fisrtDate.setDate(fisrtDate.getDate() + 14);
+    return fisrtDate.toLocaleDateString();
 }
 
 module.exports = vacation;
