@@ -13,7 +13,13 @@
  * @returns {boolean}
  */
 function has(path, object) {
-    return undefined;
+    let objectKeys = Object.keys(object || {});
+    // for (let i = 0; i < path.length; i += 1) {
+    //     if (!objectKeys.some(element => element === path[i])) return false;
+    // }
+    // return true;
+   
+    return !path.filter(element => !objectKeys.some(item => item === element)).length;
 }
 
 module.exports = has;

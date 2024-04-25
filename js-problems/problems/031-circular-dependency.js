@@ -22,6 +22,9 @@
  * @returns {boolean}
  */
 function hasCircularDependency(servicesMap) {
+    for (let i = 0; i < Object.keys.length; i += 1) {
+        
+    }
     return false;
 }
 
