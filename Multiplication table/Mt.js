@@ -23,10 +23,15 @@ const createField = () => {
 
     console.log('ROWS', rows, 'CELLS', cells);
     
-    rows.forEach((row, index) => {
-        cells[index].forEach(cell => {
+    rows.forEach((row, rowIndex) => {
+        cells[rowIndex].forEach((cell, cellIndex) => {
             cell.classList.add('table-cell');
             row.appendChild(cell);
+            if (rowIndex || cellIndex) {
+                if (cellIndex === 0) cell.innerHTML = rowIndex;
+                else if (rowIndex === 0) cell.innerHTML = cellIndex; 
+                else cell.innerHTML = (cellIndex) * (rowIndex); 
+            } 
         });
         row.classList.add('table-row');
         tableField.appendChild(row);
