@@ -15,3 +15,10 @@ header {
 .container span {
     font-size: 25px;
 }
+.container input {
+    font-size: 15px;
+}
+.weather {
+    padding-top: 45px;
+    font-size: 20px;
+}

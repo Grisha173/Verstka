@@ -10,7 +10,26 @@ const inputSelector = 'input';
 const writeValue = (json) => {
     const temp = json.current.temp_c;
     console.log('JSON', temp);
-    document.getElementsByClassName(resultSelector)[0].innerHTML = `Температура: ${json.current.temp_c} ${json.current.condition.text}`;
+    const container = document.getElementsByClassName(resultSelector)[0];
+    container.innerHTML = '';
+    const a = document.createElement('div');
+    a.innerHTML = `${json.location.localtime}`;
+    container.appendChild(a);
+    const b = document.createElement('div');
+    b.innerHTML = `Температура °C: ${json.current.temp_c}`;
+    container.appendChild(b);
+    const с = document.createElement('div');
+    с.innerHTML = `Ощущается как: ${json.current.feelslike_c}`;
+    container.appendChild(с);
+    const d = document.createElement('div');
+    d.innerHTML = `${json.current.condition.text}`;
+    container.appendChild(d);
+    const e = document.createElement('div');
+    e.innerHTML = `Количество осадков: ${json.current.precip_mm}`;
+    container.appendChild(e);
+    const f = document.createElement('div');
+    f.innerHTML = `Скорость ветра: ${json.current.wind_kph} км/ч`;
+    container.appendChild(f);
 };
 
 
