@@ -1,0 +1,154 @@
+.news-and-reviews {
+    width: 1024px;
+    height: 564px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+  }
+  .news-zagolovok {
+    margin-bottom: 60px;
+  }
+  .news-zagolovok h2{
+    font-family: 'EB Garamond';
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .pictures-text {
+    display: flex;
+  }
+  .news {
+    width: 512px;
+    height: 521px;
+    top: 1836px;
+    left: 312px;
+    gap: 60px;
+    margin-right: 50px;
+  
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 306px;
+    height: 394px;
+    gap: 32px;
+    margin-right: 24px;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 306px;
+    height: 394px;
+    gap: 32px;
+  }
+  .reviews {
+    width: 462px;
+    height: 564px;
+    top: 1836px;
+    left: 1082px;
+  }
+  .left-right-zag {
+    font-family: 'EB Garamond';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .left-right-text {
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .left-right-picture img {
+    width: 244px;
+    height: 180px;
+  }
+  .reviews-picture-july img {
+    width: 462px;
+    height: 270px;
+    border-radius: 12px, 12px, 0px, 0px;
+  }
+  .reviews-picture-july {
+    position: relative;
+    display: inline-block;
+    width: 462px;
+    height: 300px;
+    display: flex;
+    align-items: end;
+  }
+  .reviews-picture-july span {
+    font-family: 'EB Garamond';
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    color: white;
+    left: 24px;
+    bottom: 24px;
+  }
+  .july-buttons {
+    width: 462px;
+    height: 264px;
+    display: flex;
+    background: rgba(25, 25, 25, 0.15);
+    border-radius: 0 0 12px 12px;
+  }
+  .july {
+    width: 155px;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  
+  .july-zag h2 {
+    font-family: 'EB Garamond';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .july-menu button {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(5, 176, 147, 1);
+    color: white;
+    border: none;
+    margin-right: 4px;
+  
+  }
+  .buttons {
+    width: 272px;
+    height: 200px;
+    padding-top: 33px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .buttons button {
+    width: 35px;
+    height: 35px;
+    border: none;
+  }
+  .first button {
+    border-radius: 4px;
+    border: none;
+  }
+  .green {
+    background: rgba(5, 176, 147, 1);
+    color: white;
+  }
+  .gray {
+    background: rgba(25, 25, 25, 0.3);
+    color: white;
+  }

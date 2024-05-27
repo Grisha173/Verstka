@@ -1,0 +1,30 @@
+.picture {
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+    gap: 24px;
+    margin-bottom: 90px;
+}
+.main-picture img {
+    width: 640px;
+}
+.menu-picture {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.menu-picture-item {
+    background: rgba(25, 25, 25, 0.15);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 24px;
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
